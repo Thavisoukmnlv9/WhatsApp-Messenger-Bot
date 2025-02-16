@@ -1,0 +1,69 @@
+{
+    "cSpell.words": [
+        "ກະລຸນາເລືອກປະເພດ",
+        "ແກ້ໄຂຂໍ້ມູນຕຳແໜ່ງສໍາເລັດ",
+        "ຄວາມຍາວບໍ່ເກີດ",
+        "ງແຟ້ມກັບຄືນສໍາເລັດ",
+        "ງຢືນຮັບເງິນ",
+        "ງເອກກະສານກັບຄືນ",
+        "ຈໍານວນຟອມ",
+        "ຈໍານວນຟອມຕ້ອງມີຢ່າງໜ້ອຍ",
+        "ສ້າງແຟ້ມເອກກະສານສໍາເລັດ",
+        "ສາມາດສ້າງແຟ້ມເອກກະສານ",
+        "ສາມາດສົ",
+        "ຍອດເງິນ",
+        "ຕ້ອງມີຢ່າງໜ້ອຍໜຶ່ງແຖວ",
+        "ຕົວເລກບໍ່ສາມາດຂຶ້ນຕົ້ນດ້ວຍ",
+        "ທ່ານບໍ",
+        "ນີ້ແມ່ນລາຍການຂໍ້ມູນຂໍຄືນເງິນ",
+        "ບັນຈຸຢູ່ສາຂາໃດ",
+        "ແບບຟອມ",
+        "ແບບຟອມຜູ່ຂໍອອກບັດພັກເຊົາຊົ່ວຄາວ",
+        "ປະເພດປະເພດບັດຕ້ອງບໍ່ຊໍ້າກັນ",
+        "ແຟ້ມເລກທີ",
+        "ແຟ້ມເອກກະສານ",
+        "ມຄອງແຟ້ມ",
+        "ລວມຍອດເງິນ",
+        "ລະຫັດລາຄາ",
+        "ລາຍການຫຼ້າສຸດ",
+        "ລາຍລະອຽດ",
+        "ເຫດຜົນ",
+        "ເຫດຜົນທິ",
+        "ເຫດຜົນທີ່ຂື້ນບັນຊີດໍາ",
+        "ເຫດຜົນທີ່ສົ່ງແຟ້ມເອກກະສານກັບ"
+    ]
+} // {
+//     "spellright.language": [
+//         "en"
+//     ],
+//     "spellright.documentTypes": [
+//         "latex",
+//         "plaintext"
+//     ],
+//     "editor.defaultFormatter": "esbenp.prettier-vscode",
+//     // "editor.formatOnSave": true,
+//     "editor.codeActionsOnSave": {
+//         "source.fixAll.eslint": "explicit",
+//         "source.organizeImports": "explicit"
+//     },
+//     "eslint.validate": [
+//         "javascript",
+//         "javascriptreact",
+//         "typescript",
+//         "typescriptreact"
+//     ],
+//     "typescript.tsdk": "node_modules/typescript/lib",
+//     "typescript.enablePromptUseWorkspaceTsdk": true,
+//     "[typescript]": {
+//         "editor.defaultFormatter": "vscode.typescript-language-features"
+//     },
+//     "[typescriptreact]": {
+//         "editor.defaultFormatter": "vscode.typescript-language-features"
+//     },
+//     "[javascript]": {
+//         "editor.defaultFormatter": "esbenp.prettier-vscode"
+//     },
+//     "[javascriptreact]": {
+//         "editor.defaultFormatter": "esbenp.prettier-vscode"
+//     }
+// }
