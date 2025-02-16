@@ -34,7 +34,7 @@ export const columnsBots: Array<ColumnDef<IBot>> = [
     header: "",
     cell: ({ row: { original: row } }) => {
       const rwoId = row.id;
-      return <DataTableRowActions rowId={rwoId} resource="user" />;
+      return <DataTableRowActions rowId={rwoId} resource="bot" />;
     },
   },
 ];

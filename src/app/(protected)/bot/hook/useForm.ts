@@ -25,11 +25,8 @@ export const useBotForm = () => {
       queryClient.invalidateQueries({ queryKey: ["bots"] });
       form.reset();
       router.back();
-    } catch(error) {
-      const axiosError = error as { data: { message: string } };
-      if (axiosError?.data?.message) {
-        form.setError("root", { type: "manual", message: "Can not create bot" })
-      }
+    } catch {
+      form.setError("root", { type: "manual", message: "Can not create bot" })
     }
   };
   return { form, onSubmit };
