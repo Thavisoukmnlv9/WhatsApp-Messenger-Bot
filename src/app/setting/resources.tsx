@@ -25,6 +25,12 @@ export const resources: IResources[] = [
     icon: <Home size={18} />,
   },
   {
+    title: "bot1",
+    subject: "bot1",
+    href: "/bot",
+    icon: <Home size={18} />,
+  },
+  {
     title: "ຕັ້ງຄ່າ",
     href: "setting",
     subject: "/setting",

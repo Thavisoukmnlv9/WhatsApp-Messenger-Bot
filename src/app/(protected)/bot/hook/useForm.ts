@@ -11,7 +11,7 @@ import { useOne } from '@/hooks/useOne';
 import { type IBot } from "../type";
 import { defaultValuesBot, formSchema, IBotCreateSchema } from '../container/schema';
 
-export const useBotForm = () => {
+export const useBotForm = ({ handleNext }: { handleNext?: () => void }) => {
   const router = useRouter();
   const queryClient = useQueryClient();
   const form = useForm<IBotCreateSchema>({
@@ -25,7 +25,13 @@ export const useBotForm = () => {
       queryClient.invalidateQueries({ queryKey: ["bots"] });
       form.reset();
       router.back();
+      if (handleNext) {
+        handleNext();
+      }
     } catch {
+      if (handleNext) {
+        handleNext();
+      }
       form.setError("root", { type: "manual", message: "Can not create bot" })
     }
   };
@@ -44,7 +50,7 @@ export const useBotFormEdit = ({ id }: { id: number }) => {
     resolver: zodResolver(formSchema),
     defaultValues: defaultValuesBot,
   });
-  useFormReset({ bot, loading, formReset: form.reset });
+  getFormReset({ bot, loading, formReset: form.reset });
   const router = useRouter();
   const onSubmit = async (data: IBotCreateSchema) => {
     try {
@@ -64,7 +70,7 @@ export const useBotFormEdit = ({ id }: { id: number }) => {
   return { form, onSubmit };
 };
 
-const useFormReset = ({
+const getFormReset = ({
   bot,
   loading,
   formReset,
