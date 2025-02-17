@@ -12,9 +12,10 @@ interface BotFormProps {
   form: UseFormReturn<IBotCreateSchema>;
   onSubmit: (data: IBotCreateSchema) => Promise<void>;
   isEdit?: boolean;
+  handleNext?: () => void
 }
 
-export const BotForm: React.FC<BotFormProps> = ({ form, onSubmit }) => {
+export const BotForm: React.FC<BotFormProps> = ({ form, onSubmit, handleNext }) => {
   const { errors } = form.formState;
   return (
     <div>
@@ -39,7 +40,7 @@ export const BotForm: React.FC<BotFormProps> = ({ form, onSubmit }) => {
       <Separator className="my-3" />
       <div className=" space-x-3 ">
         <>
-          <Button >ໄປຕໍ່</Button>
+          <Button onClick={handleNext} >ໄປຕໍ່</Button>
         </>
       </div>
     </div>

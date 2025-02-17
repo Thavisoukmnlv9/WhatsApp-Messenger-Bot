@@ -25,7 +25,7 @@ export default function BotCreate() {
   const renderStepContent = () => {
     switch (step) {
       case 1:
-        return <BotForm form={form} onSubmit={onSubmit}/>
+        return <BotForm form={form} onSubmit={onSubmit} handleNext={handleNext} />
       case 2:
         return  <WhatsAppLogin handlePrevious={handlePrevious} />
       case 3:
